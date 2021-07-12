@@ -1,3 +1,4 @@
+@import "./responsive.scss";
 .container__main {
     background: rgb(231, 231, 231);
     .header {
@@ -71,113 +72,128 @@
             }
         }
     }
-    .menu_left {
-        background: #2A0A42;
-        width: 188px;
-        height: 512px;
-        padding: 40px 0px 100px 0px;
-        .menu--item {
-            font-family: Roboto;
-            font-style: normal;
-            padding: 15px 30px;
-            font-weight: normal;
-            display: flex;
-            align-items: center;
-            a,
-            .auction,
-            .wallet {
+    .show__auction {
+        display: flex;
+        .menu_left {
+            background: #2A0A42;
+            width: 188px;
+            height: 512px;
+            padding: 40px 0px 100px 0px;
+            .menu--item {
+                font-family: Roboto;
+                font-style: normal;
+                padding: 15px 30px;
+                font-weight: normal;
                 display: flex;
-                gap: 12px;
                 align-items: center;
-                cursor: pointer;
-                // justify-content: space-between;
-                img {}
-                span {
+                a,
+                .auction,
+                .wallet {
+                    display: flex;
+                    gap: 12px;
+                    align-items: center;
+                    cursor: pointer;
+                    // justify-content: space-between;
+                    img {}
+                    span {
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: #FFFFFF;
+                    }
+                }
+                .cart {
+                    .cart--number {
+                        font-weight: normal;
+                        font-size: 11px;
+                        line-height: 13px;
+                        color: #2A0A42;
+                    }
+                }
+            }
+            .detail__unction,
+            .wallet--detail {
+                display: none;
+                a {
                     font-size: 14px;
                     line-height: 16px;
                     color: #FFFFFF;
-                }
-            }
-            .cart {
-                .cart--number {
-                    font-weight: normal;
-                    font-size: 11px;
-                    line-height: 13px;
-                    color: #2A0A42;
+                    padding-left: 64px;
                 }
             }
         }
-        .detail__unction,
-        .wallet--detail {
-            display: none;
-            a {
-                font-size: 14px;
-                line-height: 16px;
-                color: #FFFFFF;
-                padding-left: 64px;
+        .slide {
+            width: 1200px;
+            margin: 104px 97.7px;
+            section {
+                width: 40em;
+                height: 25em;
+                margin: 0 auto;
+                position: relative;
             }
-        }
-    }
-    .slide {
-        section {
-            width: 40em;
-            height: 25em;
-            margin: 0 auto;
-            position: relative;
-        }
-        li {
-            width: 500px;
-            height: 281px;
-            background: #333;
-            display: inline-block;
-            -webkit-transition: all .3s ease-in-out;
-            -moz-transition: all .3s ease-in-out;
-            transition: all .3s ease-in-out;
-            overflow: hidden;
-        }
-        li p {
-            color: white;
-            font-weight: bold;
-            font-size: 5em;
-            text-align: center;
-            margin-top: 1.175em;
-        }
-        .items {
-            position: absolute;
-        }
-        .main-pos {
-            margin-left: 2em !important;
-            z-index: 3000;
-            /*background-image: url('https://dl.dropbox.com/u/32649907/imgs/shadow.png');*/
-        }
-        .left-pos {
-            opacity: .3;
-            margin-left: -17em !important;
-            z-index: 1000;
-            -webkit-transform: scale(.75);
-            -moz-transform: scale(.75);
-            transform: scale(.75);
-        }
-        .back-pos {
-            margin-left: 2em !important;
-            opacity: .05;
-            -webkit-transform: scale(.5);
-            -moz-transform: scale(.5);
-            transform: scale(.5);
-        }
-        .right-pos {
-            opacity: .3;
-            margin-left: 21em !important;
-            z-index: 1000;
-            -webkit-transform: scale(.75);
-            -moz-transform: scale(.75);
-            transform: scale(.75);
-        }
-        span {
-            position: relative;
-            margin: 0 auto;
-            left: 17em;
-            top: 20em;
+            li {
+                width: 950px;
+                height: 281px;
+                background: #333;
+                display: inline-block;
+                -webkit-transition: all .3s ease-in-out;
+                -moz-transition: all .3s ease-in-out;
+                transition: all .3s ease-in-out;
+                overflow: hidden;
+            }
+            li p {
+                color: white;
+                font-weight: bold;
+                font-size: 5em;
+                text-align: center;
+                margin-top: 1.175em;
+            }
+            .items {
+                position: absolute;
+            }
+            .main-pos {
+                margin-left: 2em !important;
+                z-index: 3000;
+                background: #FFFFFF;
+                box-shadow: 0px 5px 50px -20px rgba(95, 66, 117, 0.5);
+                .auction--image {
+                    .auction__status {
+                        background: linear-gradient(0deg, #F8F8F8, #F8F8F8), url(.jpg), #939393;
+                    }
+                }
+            }
+            .left-pos {
+                opacity: 1;
+                filter: blur(2px);
+                background: white;
+                margin-left: -17em !important;
+                z-index: 1000;
+                -webkit-transform: scale(.75);
+                -moz-transform: scale(.75);
+                transform: scale(.75);
+            }
+            .back-pos {
+                margin-left: 2em !important;
+                opacity: .05;
+                -webkit-transform: scale(.5);
+                -moz-transform: scale(.5);
+                transform: scale(.5);
+            }
+            .right-pos {
+                opacity: 1;
+                filter: blur(2px);
+                background: white;
+                margin-left: 21em !important;
+                z-index: 1000;
+                -webkit-transform: scale(.75);
+                -moz-transform: scale(.75);
+                transform: scale(.75);
+            }
+            span {
+                position: relative;
+                margin: 0 auto;
+                left: 17em;
+                top: 30em;
+            }
         }
     }
     .banner {
@@ -445,6 +461,9 @@
         font-weight: bold;
         margin: 70px 120px 23px 308px;
         padding: 16px 15px;
+        @include phone {
+            margin: 0;
+        }
         .footer__top {
             border-top: 1px solid #521780;
             padding: 32px 0px 25px 0px;

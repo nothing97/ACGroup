@@ -1,0 +1,24 @@
+//transform mixin for all browser;
+@mixin screen1440 {
+    @media(max-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin screen1024 {
+    @media(max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media(max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media(max-width: 576px) {
+        @content;
+    }
+}

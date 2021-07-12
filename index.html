@@ -9,6 +9,7 @@
     <title>Đấu giá</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -69,97 +70,112 @@
             </nav>
         </div>
 
-        <div class="menu_left">
-            <div class="menu--item">
-                <a href="">
-                    <img src="assets/img/home.png" alt="">
-                    <span>Trang chủ</span>
-                </a>
-            </div>
-
-            <div class="menu--item ">
-                <div class="auction">
-                    <img src="assets/img/auction.png" alt="">
-                    <span>Đấu giá</span>
-                    <img src="assets/img/arrow.png" alt="">
+        <div class="show__auction">
+            <div class="menu_left">
+                <div class="menu--item">
+                    <a href="">
+                        <img src="assets/img/home.png" alt="">
+                        <span>Trang chủ</span>
+                    </a>
                 </div>
-            </div>
 
-            <div class="detail__unction">
-                <a href="">
-                    <span>Đang đấu giá</span>
-                    <span class="badge badge-warning">08</span><br>
-                    <span class="badge badge-warning"></span>
-                </a>
-
-                <a href="">
-                    <span>Lịch sử</span>
-                </a>
-            </div>
-
-            <div class="menu--item">
-                <div class="wallet">
-                    <img src="assets/img/faucet.png" alt="">
-                    <span>Ví & số dư</span>
-                    <img src="assets/img/arrow.png" alt="">
+                <div class="menu--item ">
+                    <div class="auction">
+                        <img src="assets/img/auction.png" alt="">
+                        <span>Đấu giá</span>
+                        <img src="assets/img/arrow.png" alt="">
+                    </div>
                 </div>
+
+                <div class="detail__unction">
+                    <a href="">
+                        <span>Đang đấu giá</span>
+                        <span class="badge badge-warning">08</span><br>
+                        <span class="badge badge-warning"></span>
+                    </a>
+
+                    <a href="">
+                        <span>Lịch sử</span>
+                    </a>
+                </div>
+
+                <div class="menu--item">
+                    <div class="wallet">
+                        <img src="assets/img/faucet.png" alt="">
+                        <span>Ví & số dư</span>
+                        <img src="assets/img/arrow.png" alt="">
+                    </div>
+                </div>
+
+                <div class="wallet--detail">
+                    <a href="">
+                        <span>Nạp tiền</span><br>
+                    </a>
+
+                    <a href="">
+                        <span>Rút tiền</span>
+                    </a>
+                </div>
+
+                <div class="menu--item">
+                    <a href="" class="cart">
+                        <img src="assets/img/cart.png" alt="">
+                        <span>Giỏ hàng</span>
+                        <span class="badge badge-warning cart--number">03</span>
+                    </a>
+                </div>
+
+                <div class="menu--item">
+                    <a href="">
+                        <img src="assets/img/news.png" alt="">
+                        <span>Tin tức</span>
+                    </a>
+                </div>
+
+
             </div>
 
-            <div class="wallet--detail">
-                <a href="">
-                    <span>Nạp tiền</span><br>
-                </a>
+            <div class="slide">
+                <section>
+                    <ul class="carousel">
+                        <li class="items main-pos row" id="1">
+                            <div class="col-md-7 auction--image">
+                                <div class="auction__status">
+                                    <div class="status--title">
 
-                <a href="">
-                    <span>Rút tiền</span>
-                </a>
+                                        <span class="badge badge-danger">Đang đấu giá</span>
+                                        <img src="assets/img/heart.png" alt="">
+                                    </div>
+                                    <img class="w-100" src="assets/img/mouse.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col-md-5 auction--info ">
+                                abcd
+                            </div>
+                        </li>
+                        <li class="items right-pos" id="2">
+                            <img src="http://farm9.staticflickr.com/8337/8234123289_2b23aeaf06.jpg" />
+                        </li>
+                        <li class="items back-pos" id="3">
+                            <img src="http://farm9.staticflickr.com/8337/8234711202_831b23a2b7.jpg" />
+                        </li>
+                        <li class="items back-pos" id="4"><iframe width="500" height="281" src="https://www.youtube.com/embed/szIEr2F61DU" frameborder="0" allowfullscreen></iframe></li>
+                        <li class="items back-pos" id="5">
+                            <iframe src="https://player.vimeo.com/video/19464611" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                        </li>
+                        <li class="items back-pos" id="6">
+                            <img src="http://woofie2.pixiq.com/files/cache/20030323_img_7465_3072_x_2048_619x413.jpg" />
+                        </li>
+                        <li class="items left-pos" id="7"><img src="http://www.mishes.com/wp-content/uploads/2011/12/FlickrMonday07.jpg" />
+                        </li>
+                    </ul>
+                    <span>
+                <input type="button" value="Prev" id="prev">
+                <input type="button" value="Next" id="next">
+              </span>
+                </section>
             </div>
-
-            <div class="menu--item">
-                <a href="" class="cart">
-                    <img src="assets/img/cart.png" alt="">
-                    <span>Giỏ hàng</span>
-                    <span class="badge badge-warning cart--number">03</span>
-                </a>
-            </div>
-
-            <div class="menu--item">
-                <a href="">
-                    <img src="assets/img/news.png" alt="">
-                    <span>Tin tức</span>
-                </a>
-            </div>
-
-
-        </div>
-
-        <div class="slide col-md-11">
-            <section>
-                <ul class="carousel">
-                    <li class="items main-pos" id="1">
-                        <p>1</p>
-                    </li>
-                    <li class="items right-pos" id="2">
-                        <img src="http://farm9.staticflickr.com/8337/8234123289_2b23aeaf06.jpg" />
-                    </li>
-                    <li class="items back-pos" id="3">
-                        <img src="http://farm9.staticflickr.com/8337/8234711202_831b23a2b7.jpg" />
-                    </li>
-                    <li class="items back-pos" id="4"><iframe width="500" height="281" src="https://www.youtube.com/embed/szIEr2F61DU" frameborder="0" allowfullscreen></iframe></li>
-                    <li class="items back-pos" id="5">
-                        <iframe src="https://player.vimeo.com/video/19464611" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-                    </li>
-                    <li class="items back-pos" id="6">
-                        <img src="http://woofie2.pixiq.com/files/cache/20030323_img_7465_3072_x_2048_619x413.jpg" />
-                    </li>
-                    <li class="items left-pos" id="7"><img src="http://www.mishes.com/wp-content/uploads/2011/12/FlickrMonday07.jpg" />
-                    </li>
-                </ul>
-                <span>
-            <input type="button" value="Prev" id="prev">
-            <input type="button" value="Next" id="next">
-          </span>
-            </section>
         </div>
 
         <div class="banner">
@@ -582,7 +598,7 @@
         </div>
     </div>
 
-    <script src="slider.js"></script>
+    <!-- <script src="slider.js"></script> -->
 
     <script>
         $(document).ready(function() {
