@@ -1,0 +1,496 @@
+.container__main {
+    background: rgb(231, 231, 231);
+    .header {
+        .menu__top {
+            height: 60px;
+            // .logo{
+            // }
+            #collapsibleNavId {
+                width: 150px !important;
+                position: relative;
+                form {
+                    margin-left: 148px !important;
+                    img {
+                        position: absolute;
+                        padding-left: 9px;
+                    }
+                    input {
+                        padding-left: 47px;
+                        border: none;
+                        background: #493756 !important;
+                        border-radius: 4px;
+                        width: 476px;
+                        height: 36px;
+                    }
+                }
+            }
+            .account {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: bold;
+                line-height: 16px;
+                .money {
+                    font-size: 14px;
+                    color: #FFFFFF;
+                    // img{
+                    //     padding: 0px 18px 0px 10px;
+                    // }
+                    .recharge {
+                        border: none;
+                        background: #FAB414;
+                        border-radius: 4px;
+                        margin-left: 18px;
+                    }
+                }
+                .acc__detail {
+                    justify-content: flex-end;
+                    .acc--item {
+                        display: flex;
+                        background: #422856;
+                        width: 40px;
+                        height: 40px;
+                        // margin-right: 8px;
+                        border-radius: 50%;
+                        align-items: center;
+                        justify-content: center;
+                        img {}
+                        span {
+                            position: absolute;
+                            top: 0px;
+                            right: 0px;
+                            font-size: 10px;
+                            line-height: 12px;
+                            padding: 5px 3px;
+                            display: flex;
+                            align-items: center;
+                            text-align: center;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .menu_left {
+        background: #2A0A42;
+        width: 188px;
+        height: 512px;
+        padding: 40px 0px 100px 0px;
+        .menu--item {
+            font-family: Roboto;
+            font-style: normal;
+            padding: 15px 30px;
+            font-weight: normal;
+            display: flex;
+            align-items: center;
+            a,
+            .auction,
+            .wallet {
+                display: flex;
+                gap: 12px;
+                align-items: center;
+                cursor: pointer;
+                // justify-content: space-between;
+                img {}
+                span {
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #FFFFFF;
+                }
+            }
+            .cart {
+                .cart--number {
+                    font-weight: normal;
+                    font-size: 11px;
+                    line-height: 13px;
+                    color: #2A0A42;
+                }
+            }
+        }
+        .detail__unction,
+        .wallet--detail {
+            display: none;
+            a {
+                font-size: 14px;
+                line-height: 16px;
+                color: #FFFFFF;
+                padding-left: 64px;
+            }
+        }
+    }
+    .slide {
+        section {
+            width: 40em;
+            height: 25em;
+            margin: 0 auto;
+            position: relative;
+        }
+        li {
+            width: 500px;
+            height: 281px;
+            background: #333;
+            display: inline-block;
+            -webkit-transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+            overflow: hidden;
+        }
+        li p {
+            color: white;
+            font-weight: bold;
+            font-size: 5em;
+            text-align: center;
+            margin-top: 1.175em;
+        }
+        .items {
+            position: absolute;
+        }
+        .main-pos {
+            margin-left: 2em !important;
+            z-index: 3000;
+            /*background-image: url('https://dl.dropbox.com/u/32649907/imgs/shadow.png');*/
+        }
+        .left-pos {
+            opacity: .3;
+            margin-left: -17em !important;
+            z-index: 1000;
+            -webkit-transform: scale(.75);
+            -moz-transform: scale(.75);
+            transform: scale(.75);
+        }
+        .back-pos {
+            margin-left: 2em !important;
+            opacity: .05;
+            -webkit-transform: scale(.5);
+            -moz-transform: scale(.5);
+            transform: scale(.5);
+        }
+        .right-pos {
+            opacity: .3;
+            margin-left: 21em !important;
+            z-index: 1000;
+            -webkit-transform: scale(.75);
+            -moz-transform: scale(.75);
+            transform: scale(.75);
+        }
+        span {
+            position: relative;
+            margin: 0 auto;
+            left: 17em;
+            top: 20em;
+        }
+    }
+    .banner {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 120px 0px 308px;
+        .banner--item {
+            border-radius: 8px;
+        }
+        div {
+            padding: 0px;
+        }
+    }
+    .auction__special {
+        margin: 70px 0;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        margin: 70px 120px 23px 308px;
+        padding: 16px 30px;
+        background: #FFFFFF;
+        .view {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0px;
+            div {
+                font-size: 18px;
+                line-height: 21px;
+                color: #403946;
+            }
+            .view__all {
+                span {
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-align: right;
+                    /* text 2 color */
+                    color: #7D7882;
+                }
+            }
+        }
+        .list--auction {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            display: flex;
+            .detail__auction:last-child {
+                margin-right: 0px !important;
+            }
+            .detail__auction {
+                padding: 0px;
+                width: 16.6%;
+                margin-right: 20px;
+                .item--auction {
+                    background: #F8F8F8;
+                    padding: 12px 16px;
+                    .title__auction {
+                        display: flex;
+                        justify-content: space-between;
+                        span {
+                            padding: 4px 8px;
+                            background: #FF6666;
+                            border-radius: 4px;
+                        }
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+                    img {
+                        max-width: 100%;
+                    }
+                }
+                h4 {
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #403946;
+                    margin: 16px 0px 8px 0px;
+                }
+                .stat {
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #7D7882;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+    .auction__coming {
+        margin: 70px 0;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        margin: 70px 120px 23px 308px;
+        padding: 16px 30px;
+        background: #FFFFFF;
+        .view {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0px;
+            div {
+                font-size: 18px;
+                line-height: 21px;
+                color: #403946;
+            }
+            .view__all {
+                span {
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-align: right;
+                    /* text 2 color */
+                    color: #7D7882;
+                }
+            }
+        }
+        .list--auction {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            display: flex;
+            .detail__auction:last-child {
+                margin-right: 0px !important;
+            }
+            .detail__auction {
+                padding: 0px;
+                width: 16.6%;
+                margin-right: 20px;
+                .item--auction {
+                    background: #F8F8F8;
+                    padding: 12px 16px;
+                    .title__auction {
+                        display: flex;
+                        justify-content: space-between;
+                        span {
+                            padding: 4px 8px;
+                            background: #1DBF53;
+                            border-radius: 4px;
+                        }
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+                    img {
+                        max-width: 100%;
+                    }
+                }
+                h4 {
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #403946;
+                    margin: 16px 0px 8px 0px;
+                }
+                .stat {
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #7D7882;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+    .ticket__hunt {
+        margin: 70px 0;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        margin: 70px 120px 23px 308px;
+        .view {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0px;
+            div {
+                font-size: 18px;
+                line-height: 21px;
+                color: #403946;
+            }
+            .view__all {
+                span {
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-align: right;
+                    /* text 2 color */
+                    color: #7D7882;
+                }
+            }
+        }
+        .offer-item {
+            display: flex;
+            justify-content: space-between;
+            div {
+                border-radius: 8px;
+                padding: 0px;
+            }
+        }
+    }
+    .news {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        margin: 70px 120px 23px 308px;
+        padding: 16px 30px;
+        background: #FFFFFF;
+        .view {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0px;
+            div {
+                font-size: 18px;
+                line-height: 21px;
+                color: #403946;
+            }
+            .view__all {
+                span {
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-align: right;
+                    /* text 2 color */
+                    color: #7D7882;
+                }
+            }
+        }
+        .list--news {
+            font-family: Roboto;
+            font-style: normal;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            .detail__new {
+                // padding: 0px;
+                width: 16.67%;
+                .item--new {
+                    img {
+                        max-width: 100%;
+                    }
+                }
+                h4 {
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #000000;
+                    margin: 16px 0px 0px 0px;
+                }
+                p {
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: rgba(0, 0, 0, 0.5);
+                }
+                div {
+                    span {
+                        font-size: 12px;
+                        line-height: 20px;
+                        display: flex;
+                        align-items: center;
+                        color: #B8B3BC;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        margin: 70px 120px 23px 308px;
+        padding: 16px 15px;
+        .footer__top {
+            border-top: 1px solid #521780;
+            padding: 32px 0px 25px 0px;
+            .customer--care {
+                padding: 0px;
+                h5 {
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #7D7882;
+                }
+                .row {
+                    a {
+                        font-size: 14px;
+                        line-height: 200%;
+                        color: #7D7882;
+                    }
+                }
+            }
+            .link,
+            .contact {
+                h5 {
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #7D7882;
+                }
+                a {
+                    font-size: 14px;
+                    line-height: 200%;
+                    color: #7D7882;
+                }
+            }
+        }
+    }
+    .footer__bottom {
+        background: #2A0A42;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        p {
+            font-size: 14px;
+            line-height: 120%;
+            color: #F7F4FA;
+            text-align: center;
+            padding: 17px 0px 14px 0px;
+        }
+    }
+}
