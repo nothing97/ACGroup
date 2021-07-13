@@ -43,20 +43,21 @@
           .container__main .header .menu__top .account .acc__detail .acc--item span {
             position: absolute;
             top: 0px;
-            right: 0px;
+            right: -5px;
             font-size: 10px;
             line-height: 12px;
             padding: 5px 3px;
             display: flex;
             align-items: center;
             text-align: center;
-            color: #FFFFFF; }
+            color: #FFFFFF;
+            background: #FF6666; }
   .container__main .show__auction {
     display: flex; }
     .container__main .show__auction .menu_left {
       background: #2A0A42;
       width: 188px;
-      height: 512px;
+      height: 1000px;
       padding: 40px 0px 100px 0px; }
       .container__main .show__auction .menu_left .menu--item {
         font-family: Roboto;
@@ -78,6 +79,8 @@
             font-size: 14px;
             line-height: 16px;
             color: #FFFFFF; }
+        .container__main .show__auction .menu_left .menu--item .wallet {
+          gap: 16px; }
         .container__main .show__auction .menu_left .menu--item .cart .cart--number {
           font-weight: normal;
           font-size: 11px;
@@ -92,81 +95,286 @@
           line-height: 16px;
           color: #FFFFFF;
           padding-left: 64px; }
-    .container__main .show__auction .slide {
-      width: 1200px;
-      margin: 104px 97.7px; }
-      .container__main .show__auction .slide section {
-        width: 40em;
-        height: 25em;
-        margin: 0 auto;
-        position: relative; }
-      .container__main .show__auction .slide li {
-        width: 950px;
-        height: 281px;
-        background: #333;
-        display: inline-block;
-        -webkit-transition: all .3s ease-in-out;
-        -moz-transition: all .3s ease-in-out;
-        transition: all .3s ease-in-out;
-        overflow: hidden; }
-      .container__main .show__auction .slide li p {
-        color: white;
-        font-weight: bold;
-        font-size: 5em;
-        text-align: center;
-        margin-top: 1.175em; }
-      .container__main .show__auction .slide .items {
-        position: absolute; }
-      .container__main .show__auction .slide .main-pos {
-        margin-left: 2em !important;
-        z-index: 3000;
-        background: #FFFFFF;
-        box-shadow: 0px 5px 50px -20px rgba(95, 66, 117, 0.5); }
-        .container__main .show__auction .slide .main-pos .auction--image .auction__status {
-          background: linear-gradient(0deg, #F8F8F8, #F8F8F8), url(.jpg), #939393; }
-      .container__main .show__auction .slide .left-pos {
-        opacity: 1;
-        filter: blur(2px);
-        background: white;
-        margin-left: -17em !important;
-        z-index: 1000;
-        -webkit-transform: scale(0.75);
-        -moz-transform: scale(0.75);
-        transform: scale(0.75); }
-      .container__main .show__auction .slide .back-pos {
-        margin-left: 2em !important;
-        opacity: .05;
-        -webkit-transform: scale(0.5);
-        -moz-transform: scale(0.5);
-        transform: scale(0.5); }
-      .container__main .show__auction .slide .right-pos {
-        opacity: 1;
-        filter: blur(2px);
-        background: white;
-        margin-left: 21em !important;
-        z-index: 1000;
-        -webkit-transform: scale(0.75);
-        -moz-transform: scale(0.75);
-        transform: scale(0.75); }
-      .container__main .show__auction .slide span {
-        position: relative;
-        margin: 0 auto;
-        left: 17em;
-        top: 30em; }
-  .container__main .banner {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 120px 0px 308px; }
-    .container__main .banner .banner--item {
-      border-radius: 8px; }
-    .container__main .banner div {
-      padding: 0px; }
+    .container__main .show__auction .content {
+      width: 100%; }
+      .container__main .show__auction .content .slide {
+        width: 100%;
+        height: 750px;
+        margin: 104px 0px 0px 0px; }
+        .container__main .show__auction .content .slide section {
+          margin: 40px 300px;
+          position: relative; }
+          .container__main .show__auction .content .slide section .redirect {
+            width: 100%;
+            display: flex;
+            justify-content: space-between; }
+            .container__main .show__auction .content .slide section .redirect img#prev {
+              position: absolute;
+              top: -13em;
+              left: 8em;
+              z-index: 10000; }
+            .container__main .show__auction .content .slide section .redirect img#next {
+              position: absolute;
+              top: -13em;
+              right: -27.5em;
+              z-index: 10000; }
+        .container__main .show__auction .content .slide li {
+          width: 1155px;
+          height: 615px;
+          background: #333;
+          display: inline-block;
+          -webkit-transition: all .3s ease-in-out;
+          -moz-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+          overflow: hidden; }
+        .container__main .show__auction .content .slide li p {
+          color: white;
+          font-weight: bold;
+          font-size: 5em;
+          text-align: center;
+          margin-top: 1.175em; }
+        .container__main .show__auction .content .slide .items {
+          position: absolute; }
+        .container__main .show__auction .content .slide .main-pos, .container__main .show__auction .content .slide .left-pos, .container__main .show__auction .content .slide .back-pos, .container__main .show__auction .content .slide .right-pos {
+          display: flex;
+          margin-left: -3em !important;
+          z-index: 3000;
+          background: #FFFFFF;
+          box-shadow: 0px 5px 50px -20px rgba(95, 66, 117, 0.5); }
+          .container__main .show__auction .content .slide .main-pos .auction--image, .container__main .show__auction .content .slide .left-pos .auction--image, .container__main .show__auction .content .slide .back-pos .auction--image, .container__main .show__auction .content .slide .right-pos .auction--image {
+            padding: 32px;
+            border-right: 1px solid #F7F4FA; }
+            .container__main .show__auction .content .slide .main-pos .auction--image .auction__status, .container__main .show__auction .content .slide .left-pos .auction--image .auction__status, .container__main .show__auction .content .slide .back-pos .auction--image .auction__status, .container__main .show__auction .content .slide .right-pos .auction--image .auction__status {
+              height: 448px;
+              padding: 20px 24px;
+              background: linear-gradient(0deg, #F8F8F8, #F8F8F8), url(.jpg), #939393; }
+              .container__main .show__auction .content .slide .main-pos .auction--image .auction__status .status--title span, .container__main .show__auction .content .slide .left-pos .auction--image .auction__status .status--title span, .container__main .show__auction .content .slide .back-pos .auction--image .auction__status .status--title span, .container__main .show__auction .content .slide .right-pos .auction--image .auction__status .status--title span {
+                position: static;
+                background: #FF6666;
+                border-radius: 4px;
+                padding: 3px 8px;
+                color: white; }
+              .container__main .show__auction .content .slide .main-pos .auction--image .auction__status .status--title div, .container__main .show__auction .content .slide .left-pos .auction--image .auction__status .status--title div, .container__main .show__auction .content .slide .back-pos .auction--image .auction__status .status--title div, .container__main .show__auction .content .slide .right-pos .auction--image .auction__status .status--title div {
+                position: absolute;
+                right: 50px;
+                background: white;
+                top: 50px;
+                padding: 10px;
+                border-radius: 50%; }
+              .container__main .show__auction .content .slide .main-pos .auction--image .auction__status img, .container__main .show__auction .content .slide .left-pos .auction--image .auction__status img, .container__main .show__auction .content .slide .back-pos .auction--image .auction__status img, .container__main .show__auction .content .slide .right-pos .auction--image .auction__status img {
+                max-width: 100%; }
+            .container__main .show__auction .content .slide .main-pos .auction--image .info, .container__main .show__auction .content .slide .left-pos .auction--image .info, .container__main .show__auction .content .slide .back-pos .auction--image .info, .container__main .show__auction .content .slide .right-pos .auction--image .info {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin: 20px 0px 10px 0px; }
+              .container__main .show__auction .content .slide .main-pos .auction--image .info h5, .container__main .show__auction .content .slide .left-pos .auction--image .info h5, .container__main .show__auction .content .slide .back-pos .auction--image .info h5, .container__main .show__auction .content .slide .right-pos .auction--image .info h5 {
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 21px;
+                color: #403946; }
+              .container__main .show__auction .content .slide .main-pos .auction--image .info .para, .container__main .show__auction .content .slide .left-pos .auction--image .info .para, .container__main .show__auction .content .slide .back-pos .auction--image .info .para, .container__main .show__auction .content .slide .right-pos .auction--image .info .para {
+                display: flex;
+                gap: 5px; }
+                .container__main .show__auction .content .slide .main-pos .auction--image .info .para .time, .container__main .show__auction .content .slide .left-pos .auction--image .info .para .time, .container__main .show__auction .content .slide .back-pos .auction--image .info .para .time, .container__main .show__auction .content .slide .right-pos .auction--image .info .para .time,
+                .container__main .show__auction .content .slide .main-pos .auction--image .info .para .people,
+                .container__main .show__auction .content .slide .left-pos .auction--image .info .para .people,
+                .container__main .show__auction .content .slide .back-pos .auction--image .info .para .people,
+                .container__main .show__auction .content .slide .right-pos .auction--image .info .para .people {
+                  background: #F7F4FA;
+                  border-radius: 4px;
+                  padding: 4px 12px; }
+                  .container__main .show__auction .content .slide .main-pos .auction--image .info .para .time span, .container__main .show__auction .content .slide .left-pos .auction--image .info .para .time span, .container__main .show__auction .content .slide .back-pos .auction--image .info .para .time span, .container__main .show__auction .content .slide .right-pos .auction--image .info .para .time span,
+                  .container__main .show__auction .content .slide .main-pos .auction--image .info .para .people span,
+                  .container__main .show__auction .content .slide .left-pos .auction--image .info .para .people span,
+                  .container__main .show__auction .content .slide .back-pos .auction--image .info .para .people span,
+                  .container__main .show__auction .content .slide .right-pos .auction--image .info .para .people span {
+                    position: static; }
+            .container__main .show__auction .content .slide .main-pos .auction--image .price, .container__main .show__auction .content .slide .left-pos .auction--image .price, .container__main .show__auction .content .slide .back-pos .auction--image .price, .container__main .show__auction .content .slide .right-pos .auction--image .price {
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 16px;
+              color: #7D7882; }
+              .container__main .show__auction .content .slide .main-pos .auction--image .price .item, .container__main .show__auction .content .slide .left-pos .auction--image .price .item, .container__main .show__auction .content .slide .back-pos .auction--image .price .item, .container__main .show__auction .content .slide .right-pos .auction--image .price .item {
+                background: #B8B3BC;
+                border-radius: 4px;
+                padding: 5px 10px;
+                margin-right: 12px; }
+              .container__main .show__auction .content .slide .main-pos .auction--image .price span, .container__main .show__auction .content .slide .left-pos .auction--image .price span, .container__main .show__auction .content .slide .back-pos .auction--image .price span, .container__main .show__auction .content .slide .right-pos .auction--image .price span {
+                position: static; }
+          .container__main .show__auction .content .slide .main-pos .auction--info, .container__main .show__auction .content .slide .left-pos .auction--info, .container__main .show__auction .content .slide .back-pos .auction--info, .container__main .show__auction .content .slide .right-pos .auction--info {
+            padding: 32px;
+            font-family: Roboto;
+            font-style: normal; }
+            .container__main .show__auction .content .slide .main-pos .auction--info .update__price, .container__main .show__auction .content .slide .left-pos .auction--info .update__price, .container__main .show__auction .content .slide .back-pos .auction--info .update__price, .container__main .show__auction .content .slide .right-pos .auction--info .update__price {
+              display: flex; }
+              .container__main .show__auction .content .slide .main-pos .auction--info .update__price span, .container__main .show__auction .content .slide .left-pos .auction--info .update__price span, .container__main .show__auction .content .slide .back-pos .auction--info .update__price span, .container__main .show__auction .content .slide .right-pos .auction--info .update__price span {
+                position: static;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 16px;
+                text-align: center;
+                color: #7D7882; }
+              .container__main .show__auction .content .slide .main-pos .auction--info .update__price img, .container__main .show__auction .content .slide .left-pos .auction--info .update__price img, .container__main .show__auction .content .slide .back-pos .auction--info .update__price img, .container__main .show__auction .content .slide .right-pos .auction--info .update__price img {
+                cursor: pointer; }
+            .container__main .show__auction .content .slide .main-pos .auction--info .number__cost, .container__main .show__auction .content .slide .left-pos .auction--info .number__cost, .container__main .show__auction .content .slide .back-pos .auction--info .number__cost, .container__main .show__auction .content .slide .right-pos .auction--info .number__cost {
+              display: flex;
+              margin: 8px 0px 32px 0px;
+              justify-content: center; }
+              .container__main .show__auction .content .slide .main-pos .auction--info .number__cost .number--item, .container__main .show__auction .content .slide .left-pos .auction--info .number__cost .number--item, .container__main .show__auction .content .slide .back-pos .auction--info .number__cost .number--item, .container__main .show__auction .content .slide .right-pos .auction--info .number__cost .number--item {
+                background: #403946;
+                border-radius: 5px;
+                width: 24px;
+                height: 32px;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 28px;
+                text-align: center;
+                color: #FFFFFF;
+                margin-right: 2px;
+                display: flex;
+                align-items: center;
+                justify-content: center; }
+            .container__main .show__auction .content .slide .main-pos .auction--info .chat, .container__main .show__auction .content .slide .left-pos .auction--info .chat, .container__main .show__auction .content .slide .back-pos .auction--info .chat, .container__main .show__auction .content .slide .right-pos .auction--info .chat {
+              background: #F7F4FA;
+              padding: 17px 20px 24px 20px; }
+              .container__main .show__auction .content .slide .main-pos .auction--info .chat .content, .container__main .show__auction .content .slide .left-pos .auction--info .chat .content, .container__main .show__auction .content .slide .back-pos .auction--info .chat .content, .container__main .show__auction .content .slide .right-pos .auction--info .chat .content {
+                display: flex;
+                align-items: center;
+                margin-bottom: 16px; }
+                .container__main .show__auction .content .slide .main-pos .auction--info .chat .content .mess, .container__main .show__auction .content .slide .left-pos .auction--info .chat .content .mess, .container__main .show__auction .content .slide .back-pos .auction--info .chat .content .mess, .container__main .show__auction .content .slide .right-pos .auction--info .chat .content .mess {
+                  background: #E4DBEC;
+                  border-radius: 4px;
+                  margin-left: 8px;
+                  padding: 8px 14px 8px 12px; }
+              .container__main .show__auction .content .slide .main-pos .auction--info .chat .content--rep, .container__main .show__auction .content .slide .left-pos .auction--info .chat .content--rep, .container__main .show__auction .content .slide .back-pos .auction--info .chat .content--rep, .container__main .show__auction .content .slide .right-pos .auction--info .chat .content--rep {
+                display: flex;
+                flex-direction: row-reverse;
+                margin-bottom: 16px; }
+                .container__main .show__auction .content .slide .main-pos .auction--info .chat .content--rep .mess, .container__main .show__auction .content .slide .left-pos .auction--info .chat .content--rep .mess, .container__main .show__auction .content .slide .back-pos .auction--info .chat .content--rep .mess, .container__main .show__auction .content .slide .right-pos .auction--info .chat .content--rep .mess {
+                  background: #C4ABFA;
+                  border-radius: 4px;
+                  padding: 8px 14px 8px 12px;
+                  margin-right: 8px; }
+              .container__main .show__auction .content .slide .main-pos .auction--info .chat .tips .note, .container__main .show__auction .content .slide .left-pos .auction--info .chat .tips .note, .container__main .show__auction .content .slide .back-pos .auction--info .chat .tips .note, .container__main .show__auction .content .slide .right-pos .auction--info .chat .tips .note {
+                font-size: 13px;
+                line-height: 15px;
+                color: #7D7882;
+                width: 208px;
+                margin: 0 auto; }
+                .container__main .show__auction .content .slide .main-pos .auction--info .chat .tips .note b, .container__main .show__auction .content .slide .left-pos .auction--info .chat .tips .note b, .container__main .show__auction .content .slide .back-pos .auction--info .chat .tips .note b, .container__main .show__auction .content .slide .right-pos .auction--info .chat .tips .note b {
+                  color: red; }
+            .container__main .show__auction .content .slide .main-pos .auction--info .buy, .container__main .show__auction .content .slide .left-pos .auction--info .buy, .container__main .show__auction .content .slide .back-pos .auction--info .buy, .container__main .show__auction .content .slide .right-pos .auction--info .buy {
+              display: flex;
+              margin: 24px 0px 13px 0px;
+              justify-content: space-between;
+              padding: 10px 20px;
+              gap: 8px; }
+              .container__main .show__auction .content .slide .main-pos .auction--info .buy .number, .container__main .show__auction .content .slide .left-pos .auction--info .buy .number, .container__main .show__auction .content .slide .back-pos .auction--info .buy .number, .container__main .show__auction .content .slide .right-pos .auction--info .buy .number {
+                width: 124px;
+                background: #FFFFFF;
+                border: 1px solid #B8B3BC;
+                box-sizing: border-box;
+                border-radius: 5px;
+                display: flex;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                align-items: center; }
+                .container__main .show__auction .content .slide .main-pos .auction--info .buy .number div img, .container__main .show__auction .content .slide .left-pos .auction--info .buy .number div img, .container__main .show__auction .content .slide .back-pos .auction--info .buy .number div img, .container__main .show__auction .content .slide .right-pos .auction--info .buy .number div img {
+                  cursor: pointer; }
+                .container__main .show__auction .content .slide .main-pos .auction--info .buy .number input, .container__main .show__auction .content .slide .left-pos .auction--info .buy .number input, .container__main .show__auction .content .slide .back-pos .auction--info .buy .number input, .container__main .show__auction .content .slide .right-pos .auction--info .buy .number input {
+                  border: none;
+                  text-align: center;
+                  width: 70px; }
+              .container__main .show__auction .content .slide .main-pos .auction--info .buy .order, .container__main .show__auction .content .slide .left-pos .auction--info .buy .order, .container__main .show__auction .content .slide .back-pos .auction--info .buy .order, .container__main .show__auction .content .slide .right-pos .auction--info .buy .order {
+                width: 240px;
+                background: #FAB414;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                padding: 16px;
+                font-size: 14px;
+                font-weight: bold; }
+            .container__main .show__auction .content .slide .main-pos .auction--info .action, .container__main .show__auction .content .slide .left-pos .auction--info .action, .container__main .show__auction .content .slide .back-pos .auction--info .action, .container__main .show__auction .content .slide .right-pos .auction--info .action {
+              padding: 0 20px;
+              display: flex;
+              justify-content: space-between;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 14px;
+              display: flex;
+              align-items: center;
+              color: #B8B3BC;
+              position: relative;
+              margin-bottom: 20px; }
+              .container__main .show__auction .content .slide .main-pos .auction--info .action .price span, .container__main .show__auction .content .slide .left-pos .auction--info .action .price span, .container__main .show__auction .content .slide .back-pos .auction--info .action .price span, .container__main .show__auction .content .slide .right-pos .auction--info .action .price span,
+              .container__main .show__auction .content .slide .main-pos .auction--info .action .stakes span,
+              .container__main .show__auction .content .slide .left-pos .auction--info .action .stakes span,
+              .container__main .show__auction .content .slide .back-pos .auction--info .action .stakes span,
+              .container__main .show__auction .content .slide .right-pos .auction--info .action .stakes span {
+                position: static; }
+              .container__main .show__auction .content .slide .main-pos .auction--info .action .price b, .container__main .show__auction .content .slide .left-pos .auction--info .action .price b, .container__main .show__auction .content .slide .back-pos .auction--info .action .price b, .container__main .show__auction .content .slide .right-pos .auction--info .action .price b,
+              .container__main .show__auction .content .slide .main-pos .auction--info .action .stakes b,
+              .container__main .show__auction .content .slide .left-pos .auction--info .action .stakes b,
+              .container__main .show__auction .content .slide .back-pos .auction--info .action .stakes b,
+              .container__main .show__auction .content .slide .right-pos .auction--info .action .stakes b {
+                font-weight: bold;
+                color: #403946; }
+                .container__main .show__auction .content .slide .main-pos .auction--info .action .price b span, .container__main .show__auction .content .slide .left-pos .auction--info .action .price b span, .container__main .show__auction .content .slide .back-pos .auction--info .action .price b span, .container__main .show__auction .content .slide .right-pos .auction--info .action .price b span,
+                .container__main .show__auction .content .slide .main-pos .auction--info .action .stakes b span,
+                .container__main .show__auction .content .slide .left-pos .auction--info .action .stakes b span,
+                .container__main .show__auction .content .slide .back-pos .auction--info .action .stakes b span,
+                .container__main .show__auction .content .slide .right-pos .auction--info .action .stakes b span {
+                  position: static;
+                  color: #B8B3BC; }
+              .container__main .show__auction .content .slide .main-pos .auction--info .action div::before, .container__main .show__auction .content .slide .left-pos .auction--info .action div::before, .container__main .show__auction .content .slide .back-pos .auction--info .action div::before, .container__main .show__auction .content .slide .right-pos .auction--info .action div::before {
+                content: "";
+                position: absolute;
+                height: 10px;
+                border-right: 1px solid #ccc;
+                top: 2px; }
+        .container__main .show__auction .content .slide .left-pos {
+          opacity: 1;
+          filter: blur(7px);
+          background: white;
+          margin-left: -21em !important;
+          z-index: 1000;
+          -webkit-transform: scale(0.75);
+          -moz-transform: scale(0.75);
+          transform: scale(0.75); }
+        .container__main .show__auction .content .slide .back-pos {
+          margin-left: 2em !important;
+          opacity: 0;
+          -webkit-transform: scale(0.5);
+          -moz-transform: scale(0.5);
+          transform: scale(0.5); }
+        .container__main .show__auction .content .slide .right-pos {
+          opacity: 1;
+          filter: blur(7px);
+          background: white;
+          margin-left: 16em !important;
+          z-index: 1000;
+          -webkit-transform: scale(0.75);
+          -moz-transform: scale(0.75);
+          transform: scale(0.75); }
+        .container__main .show__auction .content .slide span {
+          position: relative;
+          margin: 0 auto;
+          left: -17em;
+          top: 30em; }
+      .container__main .show__auction .content .banner {
+        display: flex;
+        gap: 20px;
+        margin: 0px 140px 70px 140px; }
   .container__main .auction__special {
     margin: 70px 0;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    margin: 70px 120px 23px 308px;
+    margin: 0px 120px 23px 308px;
     padding: 16px 30px;
     background: #FFFFFF; }
     .container__main .auction__special .view {
