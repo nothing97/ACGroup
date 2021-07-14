@@ -26,9 +26,11 @@
     <div class="container__main">
         <div class="header">
             <nav class="menu__top navbar navbar-expand-sm navbar-dark" style="background-color: #2A0A42;">
+                <img class="nav_menu" src="assets/img/menu.png" alt="">
                 <a class="logo navbar-brand" href="#">
                     <img src="assets/img/logo.png" alt="logo">
                 </a>
+
 
                 <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
                     <img src="assets/img/menu.png" alt="">
@@ -39,6 +41,11 @@
                         <img src="assets/img/search.png" alt="">
                         <input class="search form-control mr-sm-2" type="text" placeholder="Tìm sản phẩm">
                     </form>
+                </div>
+
+                <div class="seacrh_mobile">
+                    <input type="text" name="search" placeholder="Tìm sản phẩm..">
+                    <img src="assets/img/search_mb.png" alt="" class="search" style="display: none;">
                 </div>
 
                 <div class="col-md-4 account row align-items-center">
@@ -62,8 +69,33 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4 avatar">
+                        <a class="col-md-4 avatar popover-toggle" data-placement="bottom" id="avatar">
                             <img src="assets/img/avatar.png" alt="">
+                        </a>
+
+                        <div class="setting__acc" id="setting__avatar">
+                            <p class="m-0 text-secondary text-left">Tài khoản chính</p>
+                            <div class="text-left">1,530,000,000 VNDT</div>
+                            <hr>
+                            <div class="profile">
+                                <img src="assets/img/people1.png" alt="">
+                                <div>Hồ sơ cá nhân</div>
+                            </div>
+
+                            <div class="change__profile">
+                                <img src="assets/img/lock1.png" alt="">
+                                <div>Đổi mật khẩu</div>
+                            </div>
+
+                            <div class="addr__receive">
+                                <img src="assets/img/map.png" alt="">
+                                <div>Địa chỉ nhận hàng</div>
+                            </div>
+
+                            <div class="logout">
+                                <img src="assets/img/logout.png" alt="">
+                                <div>Đăng xuất</div>
+                            </div>
                         </div>
                     </div>
 
@@ -251,11 +283,11 @@
 
                                     <div class="buy">
                                         <div class="number">
-                                            <div>
+                                            <div class="add">
                                                 <img src="assets/img/minus.png" alt="">
                                             </div>
                                             <input type="text" value="1">
-                                            <div>
+                                            <div class="sub">
                                                 <img src="assets/img/add.png" alt="">
                                             </div>
                                         </div>
@@ -1172,6 +1204,130 @@
                     </section>
                 </div>
 
+                <div id="slide_mobile" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <div class="carousel-indicators">
+                        <div data-target="#slide_mobile" data-slide-to="0" class="active"></div>
+                        <div data-target="#slide_mobile" data-slide-to="1"></div>
+                        <div data-target="#slide_mobile" data-slide-to="2"></div>
+                    </div>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="auction__product">
+                                <div class="auction--image">
+                                    <div class="auction__status">
+                                        <div class="status--title">
+                                            <span class="">Đang đấu giá</span>
+                                            <div>
+                                                <img src="assets/img/heart.png" alt="">
+                                            </div>
+                                        </div>
+                                        <img class="" src="assets/img/mouse.png" alt="">
+                                    </div>
+
+                                    <div class="info">
+                                        <h5>Robot hút bụi Xiaomi Vacuum Mop 3502</h5>
+                                        <div class="para">
+                                            <div class="time">
+                                                <img src="assets/img/lock.png" alt="">
+                                                <span>00 : 09 : 09</span>
+                                            </div>
+
+                                            <div class="people">
+                                                <img src="assets/img/people.png" alt="">
+                                                <span>135</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="price">
+                                        <span class="badge badge-default item">Đồ gia dụng</span>
+
+                                        <span>Khởi điểm: <b>1.300.423.000</b>  VNDT</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="auction__product">
+                                <div class="auction--image">
+                                    <div class="auction__status">
+                                        <div class="status--title">
+                                            <span class="">Đang đấu giá</span>
+                                            <div>
+                                                <img src="assets/img/heart.png" alt="">
+                                            </div>
+                                        </div>
+                                        <img class="" src="assets/img/mouse.png" alt="">
+                                    </div>
+
+                                    <div class="info">
+                                        <h5>Robot hút bụi Xiaomi Vacuum Mop 3502</h5>
+                                        <div class="para">
+                                            <div class="time">
+                                                <img src="assets/img/lock.png" alt="">
+                                                <span>00 : 09 : 09</span>
+                                            </div>
+
+                                            <div class="people">
+                                                <img src="assets/img/people.png" alt="">
+                                                <span>135</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="price">
+                                        <span class="badge badge-default item">Đồ gia dụng</span>
+
+                                        <span>Khởi điểm: <b>1.300.423.000</b>  VNDT</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="auction__product">
+                                <div class="auction--image">
+                                    <div class="auction__status">
+                                        <div class="status--title">
+                                            <span class="">Đang đấu giá</span>
+                                            <div>
+                                                <img src="assets/img/heart.png" alt="">
+                                            </div>
+                                        </div>
+                                        <img class="" src="assets/img/mouse.png" alt="">
+                                    </div>
+
+                                    <div class="info">
+                                        <h5>Robot hút bụi Xiaomi Vacuum Mop 3502</h5>
+                                        <div class="para">
+                                            <div class="time">
+                                                <img src="assets/img/lock.png" alt="">
+                                                <span>00 : 09 : 09</span>
+                                            </div>
+
+                                            <div class="people">
+                                                <img src="assets/img/people.png" alt="">
+                                                <span>135</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="price">
+                                        <span class="badge badge-default item">Đồ gia dụng</span>
+
+                                        <span>Khởi điểm: <b>1.300.423.000</b>  VNDT</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="banner">
                     <div class="banner--item">
                         <img src="assets/img/banner1.png" alt="">
@@ -1211,7 +1367,69 @@
                     <div class="item--auction ">
                         <div class="title__auction">
                             <span class="badge badge-danger">08:20:03</span>
-                            <img src="assets/img/heart.png" alt="">
+                            <div class="mood">
+                                <img src="assets/img/heart.png" alt="">
+                            </div>
+                        </div>
+                        <img src="assets/img/mouse.png" alt="">
+                    </div>
+                    <h4>Chuột gaming Fulen 520k Zen 20</h4>
+                    <div class="stat">
+                        <span>5,302,000 VNDT</span>
+                        <div class="num">
+                            <img src="assets/img/people.png" alt="">
+                            <span>135</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail__auction ">
+                    <div class="item--auction ">
+                        <div class="title__auction">
+                            <span class="badge badge-danger">08:20:03</span>
+                            <div class="mood">
+                                <img src="assets/img/heart.png" alt="">
+                            </div>
+                        </div>
+                        <img src="assets/img/mouse.png" alt="">
+                    </div>
+                    <h4>Chuột gaming Fulen 520k Zen 20</h4>
+                    <div class="stat">
+                        <span>5,302,000 VNDT</span>
+                        <div class="num">
+                            <img src="assets/img/people.png" alt="">
+                            <span>135</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail__auction ">
+                    <div class="item--auction ">
+                        <div class="title__auction">
+                            <span class="badge badge-danger">08:20:03</span>
+                            <div class="mood">
+                                <img src="assets/img/heart.png" alt="">
+                            </div>
+                        </div>
+                        <img src="assets/img/mouse.png" alt="">
+                    </div>
+                    <h4>Chuột gaming Fulen 520k Zen 20</h4>
+                    <div class="stat">
+                        <span>5,302,000 VNDT</span>
+                        <div class="num">
+                            <img src="assets/img/people.png" alt="">
+                            <span>135</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail__auction ">
+                    <div class="item--auction ">
+                        <div class="title__auction">
+                            <span class="badge badge-danger">08:20:03</span>
+                            <div class="mood">
+                                <img src="assets/img/heart.png" alt="">
+                            </div>
                         </div>
                         <img src="assets/img/mouse.png" alt="">
                     </div>
@@ -1229,7 +1447,9 @@
                     <div class="item--auction ">
                         <div class="title__auction">
                             <span class="badge badge-danger">08:20:03</span>
-                            <img src="assets/img/heart.png" alt="">
+                            <div class="mood">
+                                <img src="assets/img/heart.png" alt="">
+                            </div>
                         </div>
                         <img src="assets/img/mouse.png" alt="">
                     </div>
@@ -1243,65 +1463,13 @@
                     </div>
                 </div>
 
-                <div class="detail__auction">
+                <div class="detail__auction ">
                     <div class="item--auction ">
                         <div class="title__auction">
                             <span class="badge badge-danger">08:20:03</span>
-                            <img src="assets/img/heart.png" alt="">
-                        </div>
-                        <img src="assets/img/mouse.png" alt="">
-                    </div>
-                    <h4>Chuột gaming Fulen 520k Zen 20</h4>
-                    <div class="stat">
-                        <span>5,302,000 VNDT</span>
-                        <div class="num">
-                            <img src="assets/img/people.png" alt="">
-                            <span>135</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="detail__auction">
-                    <div class="item--auction ">
-                        <div class="title__auction">
-                            <span class="badge badge-danger">08:20:03</span>
-                            <img src="assets/img/heart.png" alt="">
-                        </div>
-                        <img src="assets/img/mouse.png" alt="">
-                    </div>
-                    <h4>Chuột gaming Fulen 520k Zen 20</h4>
-                    <div class="stat">
-                        <span>5,302,000 VNDT</span>
-                        <div class="num">
-                            <img src="assets/img/people.png" alt="">
-                            <span>135</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="detail__auction">
-                    <div class="item--auction ">
-                        <div class="title__auction">
-                            <span class="badge badge-danger">08:20:03</span>
-                            <img src="assets/img/heart.png" alt="">
-                        </div>
-                        <img src="assets/img/mouse.png" alt="">
-                    </div>
-                    <h4>Chuột gaming Fulen 520k Zen 20</h4>
-                    <div class="stat">
-                        <span>5,302,000 VNDT</span>
-                        <div class="num">
-                            <img src="assets/img/people.png" alt="">
-                            <span>135</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="detail__auction">
-                    <div class="item--auction ">
-                        <div class="title__auction">
-                            <span class="badge badge-danger">08:20:03</span>
-                            <img src="assets/img/heart.png" alt="">
+                            <div class="mood">
+                                <img src="assets/img/heart.png" alt="">
+                            </div>
                         </div>
                         <img src="assets/img/mouse.png" alt="">
                     </div>
@@ -1335,7 +1503,9 @@
                     <div class="item--auction ">
                         <div class="title__auction">
                             <span class="badge badge-success">08:20:03</span>
-                            <img src="assets/img/heart.png" alt="">
+                            <div class="mood">
+                                <img src="assets/img/heart.png" alt="">
+                            </div>
                         </div>
                         <img src="assets/img/mouse.png" alt="">
                     </div>
@@ -1353,7 +1523,9 @@
                     <div class="item--auction ">
                         <div class="title__auction">
                             <span class="badge badge-success">08:20:03</span>
-                            <img src="assets/img/heart.png" alt="">
+                            <div class="mood">
+                                <img src="assets/img/heart.png" alt="">
+                            </div>
                         </div>
                         <img src="assets/img/mouse.png" alt="">
                     </div>
@@ -1371,7 +1543,9 @@
                     <div class="item--auction ">
                         <div class="title__auction">
                             <span class="badge badge-success">08:20:03</span>
-                            <img src="assets/img/heart.png" alt="">
+                            <div class="mood">
+                                <img src="assets/img/heart.png" alt="">
+                            </div>
                         </div>
                         <img src="assets/img/mouse.png" alt="">
                     </div>
@@ -1389,7 +1563,9 @@
                     <div class="item--auction ">
                         <div class="title__auction">
                             <span class="badge badge-success">08:20:03</span>
-                            <img src="assets/img/heart.png" alt="">
+                            <div class="mood">
+                                <img src="assets/img/heart.png" alt="">
+                            </div>
                         </div>
                         <img src="assets/img/mouse.png" alt="">
                     </div>
@@ -1407,7 +1583,9 @@
                     <div class="item--auction ">
                         <div class="title__auction">
                             <span class="badge badge-success">08:20:03</span>
-                            <img src="assets/img/heart.png" alt="">
+                            <div class="mood">
+                                <img src="assets/img/heart.png" alt="">
+                            </div>
                         </div>
                         <img src="assets/img/mouse.png" alt="">
                     </div>
@@ -1425,7 +1603,9 @@
                     <div class="item--auction ">
                         <div class="title__auction">
                             <span class="badge badge-success">08:20:03</span>
-                            <img src="assets/img/heart.png" alt="">
+                            <div class="mood">
+                                <img src="assets/img/heart.png" alt="">
+                            </div>
                         </div>
                         <img src="assets/img/mouse.png" alt="">
                     </div>
@@ -1455,23 +1635,22 @@
             </div>
 
             <div class="offer-item">
-                <div class="">
+                <div class="ticket">
                     <img src="assets/img/offer.png" alt="">
                 </div>
 
-                <div class="">
+                <div class="ticket">
                     <img src="assets/img/offer.png" alt="">
                 </div>
 
-                <div class="">
+                <div class="ticket">
                     <img src="assets/img/offer.png" alt="">
                 </div>
 
-                <div class="">
+                <div class="ticket">
                     <img src="assets/img/offer.png" alt="">
                 </div>
             </div>
-
         </div>
 
         <div class="news">
@@ -1592,11 +1771,13 @@
         </div>
 
         <div class="footer__bottom">
-            <p>Bản quyền © 2021 Công ty Cổ phần Tập đoàn Đầu tư và Phát triển Dự án Á Châu.</p>
+            <div>
+                Bản quyền © 2021 Công ty Cổ phần Tập đoàn Đầu tư và Phát triển Dự án Á Châu.
+            </div>
         </div>
     </div>
 
-    <!-- <script src="slider.js"></script> -->
+    <script src="slider.js"></script>
 
     <script>
         $(document).ready(function() {
@@ -1608,6 +1789,24 @@
         $(document).ready(function() {
             $(".wallet").click(function() {
                 $(".wallet--detail").toggle();
+            });
+        });
+
+        $(document).ready(function() {
+            $("#avatar").click(function() {
+                $("#setting__avatar").toggle();
+            });
+        });
+
+        $(document).ready(function() {
+            // Add & Minus 
+            $('.add').click(function() {
+                $(this).prev().val(+$(this).prev().val() + 1);
+            });
+            $('.sub').click(function() {
+                if ($(this).next().val() > 1) {
+                    if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
+                }
             });
         });
     </script>

@@ -7,7 +7,7 @@ $('ul, span').hover(
         clearInterval(autoSwap);
     },
     function() {
-        autoSwap = setInterval(swap, 5000);
+        // autoSwap = setInterval(swap, 5000);
     });
 
 //global variables
@@ -96,10 +96,10 @@ $('#prev').click(function() {
 });
 
 //if any visible items are clicked
-$('li').click(function() {
-    if ($(this).attr('class') == 'items left-pos') {
-        swap('counter-clockwise');
-    } else {
-        swap('clockwise');
-    }
-});
+// $('li').click(function() {
+//     if ($(this).attr('class') == 'items left-pos') {
+//         swap('counter-clockwise');
+//     } else {
+//         swap('clockwise');
+//     }
+// });
