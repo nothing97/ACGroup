@@ -1,18 +1,24 @@
 //transform mixin for all browser;
-@mixin screen1440 {
-    @media(max-width: 1440px) {
+@mixin screen_big {
+    @media(max-width: 1920px) and(min-width: 1367px) {
         @content;
     }
 }
 
 @mixin screen1024 {
-    @media(max-width: 1024px) {
+    @media(max-width: 1366px) and(min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin ipadPro {
+    @media(max-width: 1023px) and(min-width: 769px) {
         @content;
     }
 }
 
 @mixin tablet {
-    @media(max-width: 768px) {
+    @media(max-width: 768px) and(min-width: 577px) {
         @content;
     }
 }
