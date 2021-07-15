@@ -78,7 +78,7 @@
                         border-radius: 4px;
                         font-size: 16px;
                         background: #422856;
-                        background-image: url('assets/img/search_mb.png');
+                        background-image: url('search.png');
                         background-position: 10px 10px;
                         background-repeat: no-repeat;
                         padding: 0 20px;
@@ -86,14 +86,20 @@
                         border-radius: 50%;
                     }
                 }
+                 ::placeholder {
+                    color: #7B7283;
+                }
                 input[type=text]:focus {
                     @include phone {
-                        width: 100%;
+                        width: 92%;
                         z-index: 10000;
-                        margin: auto;
+                        margin: 0 15px;
                         position: absolute;
                         top: 10px;
+                        height: 41px;
+                        display: block;
                         left: 0em;
+                        padding: 0 35px;
                         border-radius: 4px;
                         display: block;
                         outline: none;
@@ -154,6 +160,9 @@
                         border-left: 10px solid transparent;
                         border-right: 10px solid transparent;
                         border-bottom: 20px solid white;
+                        @include phone {
+                            right: 5px;
+                        }
                     }
                     #setting__avatar {
                         font-family: Roboto;
@@ -309,7 +318,7 @@
                         img#prev {
                             position: absolute;
                             top: -13em;
-                            left: 8em;
+                            left: 7.5em;
                             z-index: 10000;
                             cursor: pointer;
                         }
@@ -506,6 +515,7 @@
                             padding: 10px 20px;
                             gap: 8px;
                             .number {
+                                display: none !important;
                                 width: 124px;
                                 background: #FFFFFF;
                                 border: 1px solid #B8B3BC;
@@ -525,6 +535,40 @@
                                     border: none;
                                     text-align: center;
                                     width: 70px;
+                                }
+                                input[type="number"] {
+                                    -moz-appearance: textfield;
+                                    -webkit-appearance: none;
+                                }
+                            }
+                            form#myform {
+                                display: flex;
+                                width: 134px;
+                                background: #FFFFFF;
+                                border: 1px solid #B8B3BC;
+                                box-sizing: border-box;
+                                border-radius: 5px;
+                                justify-content: space-between;
+                                align-items: center;
+                                input.qty {
+                                    width: 70px;
+                                    border: none;
+                                    text-align: center;
+                                }
+                                .qtyminus,
+                                .qtyplus {
+                                    border: none;
+                                    padding: 0 9px;
+                                    background: none;
+                                    cursor: pointer;
+                                }
+                                .qtyplus {
+                                    border-top-right-radius: 4px;
+                                    border-bottom-right-radius: 4px;
+                                }
+                                .qtyminus {
+                                    border-top-left-radius: 4px;
+                                    border-bottom-left-radius: 4px;
                                 }
                             }
                             .order {
@@ -676,11 +720,11 @@
                                             right: 50px;
                                             background: white;
                                             top: 50px;
-                                            padding: 10px;
+                                            padding: 5px;
                                             border-radius: 50%;
                                             @include phone {
                                                 right: 25px;
-                                                top: 40px;
+                                                top: 25px;
                                             }
                                             img {}
                                         }
@@ -882,7 +926,7 @@
             padding: 15px;
         }
         @include phone {
-            margin: 0;
+            margin: 20px 0px 40px 0px;
         }
         .view {
             display: flex;
@@ -1030,7 +1074,7 @@
         padding: 16px 30px;
         background: #FFFFFF;
         @include phone {
-            margin: 0;
+            margin: 20px 0px 80px 0px;
             padding: 15px;
         }
         .view {
@@ -1096,6 +1140,15 @@
             }
         }
     }
+    .footer::before {
+        @include phone {
+            content: "";
+            position: absolute;
+            width: 90%;
+            height: 1px;
+            background: #521780;
+        }
+    }
     .footer {
         font-family: Roboto;
         font-style: normal;
@@ -1107,6 +1160,9 @@
         .footer__top {
             border-top: 1px solid #521780;
             padding: 32px 0px 25px 0px;
+            @include phone {
+                border: none;
+            }
             .customer--care {
                 padding: 0px;
                 @include phone {
